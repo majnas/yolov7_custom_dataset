@@ -4,10 +4,10 @@
 I have trained yolov7 on WiderFace dataset to detect face in images.
 # Demo 
 
+#https://user-images.githubusercontent.com/31705845/178272928-81f69d0e-6d7d-422f-903b-4cc2ad8c61c8.mp4
 
 
-https://user-images.githubusercontent.com/31705845/178272928-81f69d0e-6d7d-422f-903b-4cc2ad8c61c8.mp4
-
+[![Watch the video](https://img.youtube.com/vi/s3ga6vWnYXg/maxresdefault.jpg)](https://youtu.be/s3ga6vWnYXg)
 
 
 ```bash
