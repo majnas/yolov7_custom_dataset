@@ -1,13 +1,18 @@
-### Training YOLOV7 on custom dataset
-# Step1: Clone the repository
-```bash
+## Training YOLOV7 on custom dataset
+### Step1: Clone the repository
 
+I have trained yolov7 on WiderFace dataset to detect face in images.
+# Demo 
+
+
+
+```bash
 git clone --recursive https://github.com/majnas/yolov7_custom_dataset.git
 cd yolov7_custom_dataset/yolov7
 
 pip install -r requirements.txt
 ```
-### Download pretrained face detection from here and place in folder pretrained
+### Step2: Download pretrained face detection from here and place in folder pretrained
 ```log
 ├── custom
 │   ├── images
@@ -40,13 +45,18 @@ pip install -r requirements.txt
 
 ```
 
-# To inference face detection use this command
+### Step3: To inference face detection use this command
 ```shell
 cd yolov7
 python detect.py --weights ./pretrained/best.pt --conf 0.25 --img-size 640 --source ../data/me.png
 ```
 
-### Custom dataset structure
+#### Sample Output
+<img src="data/me_predict.png" width="1200" height="600">
+
+
+## Preparing Custom dataset
+### Step1: Custom dataset structure
 ```log
 ├── custom
     ├── images
@@ -117,7 +127,7 @@ class_id relative_center_x relative_center_y 0.relative_center_width relative_ce
 /home/dev/yolov7_custom_dataset/custom/images/train/train_X.jpg
 ```
 
-### Config file
+### Step2: Prepare data file
 To make a data file for custom dataset make a copy of ./data/coco.yaml then rename it to custom.yaml and change the paths and class numbers and names as follows.
 
 ```
@@ -132,6 +142,7 @@ nc: 1
 names: [ 'face', ]
 ```
 
+### Step3: Prepare config file
 To make a new config file for your custom training make a copy of ./cfg/training/yolov7.yaml then rename it to yolov7_custom.yaml and change the number of classes in the file as follows.
 
 ```
@@ -156,7 +167,7 @@ backbone:
    
 ```
 
-### To train on custom dataset run these commands
+### Step4: To train on custom dataset run these commands
 Single GPU training
 ```
 python train.py --workers 8 --device 0 --batch-size 32 --data data/custom.yaml --img 640 640 --cfg cfg/training/yolov7_custom.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml
