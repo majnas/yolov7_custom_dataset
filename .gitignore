@@ -1,0 +1,5 @@
+custom/*
+!custom/README.md
+coco/*
+yolov7/*
+demo/*
