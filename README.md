@@ -6,6 +6,10 @@ I have trained yolov7 on WiderFace dataset to detect face in images.
 
 
 
+https://user-images.githubusercontent.com/31705845/178272928-81f69d0e-6d7d-422f-903b-4cc2ad8c61c8.mp4
+
+
+
 ```bash
 git clone --recursive https://github.com/majnas/yolov7_custom_dataset.git
 cd yolov7_custom_dataset/yolov7
