@@ -19,7 +19,7 @@ cd yolov7_custom_dataset/yolov7
 
 pip install -r requirements.txt
 ```
-### Step2: Download pretrained face detection from here and place in folder pretrained
+### Step2: Download pretrained face detection from [here](https://drive.google.com/file/d/1INiC_M_ttd8xMpZ9CuSA1FTqUxZT4e1y/view?usp=sharing) and place in folder pretrained
 ```log
 ├── custom
 │   ├── images
