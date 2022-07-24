@@ -1,7 +1,7 @@
 ## Training YOLOV7 on custom dataset
 ### Step1: Clone the repository
 
-I have trained yolov7 on [WiderFace](http://shuoyang1213.me/WIDERFACE/) dataset to detect faces in image.
+I have trained yolov7 on [WiderFace](http://shuoyang1213.me/WIDERFACE/) dataset to detect faces in images.
 Link to original yolov7 repository :point_right: [HERE](https://github.com/WongKinYiu/yolov7).
 
 # Demo 1
